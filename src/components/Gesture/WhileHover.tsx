@@ -8,7 +8,7 @@ const WhileHover = () => {
       whileHover={{ scale: 1.02, width: "15%", color: "yellow", rotate: 3 }}
       className="text-gray-400 font-mono border border-gray-300 h-10 w-40 shadow shadow-white"
     >
-      Motion.dev
+      Hover Me
     </motion.button>
   );
 };
