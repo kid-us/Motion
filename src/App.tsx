@@ -1,5 +1,6 @@
 import "./App.css";
-import WhileTap from "./components/Gesture/WhileTap";
+import WhileDrag from "./components/Gesture/WhileDrag";
+// import WhileTap from "./components/Gesture/WhileTap";
 // import WhileHover from "./components/Gesture/WhileHover";
 // import Transition from "./components/Transition/Transition";
 
@@ -9,7 +10,8 @@ function App() {
       {/* <Transition /> */}
       {/* Gestures */}
       {/* <WhileHover /> */}
-      <WhileTap />
+      {/* <WhileTap /> */}
+      <WhileDrag />
     </div>
   );
 }
