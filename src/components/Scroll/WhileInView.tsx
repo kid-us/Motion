@@ -1,8 +1,36 @@
-import { motion } from "framer-motion";
+import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
 const WhileInView = () => {
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    bounce: 0,
+    stiffness: 100,
+    damping: 20,
+    restDelta: 0.001,
+  });
+
+  const background = useTransform(
+    scrollYProgress,
+    [0, 0.5, 1],
+    ["#f00", "#0f0", "#00f"]
+  );
+
   return (
     <div className="grid grid-cols-1 w-[40%] mt-[90em]">
+      <motion.div
+        className="container mx-auto rounded-full"
+        style={{
+          scaleX,
+          position: "fixed",
+          top: 20,
+          left: 0,
+          right: 0,
+          originX: 0,
+          height: 10,
+          background,
+        }}
+      ></motion.div>
+
       <ScrollComponent>
         <div className="bg-zinc-900 p-5 rounded-xl border border-gray-500 mb-20">
           <p className="text-sm font-mono">
