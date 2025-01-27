@@ -1,5 +1,6 @@
 import "./App.css";
-import WhileInView from "./components/Scroll/WhileInView";
+import Layout from "./components/Layout/Layout";
+// import WhileInView from "./components/Scroll/WhileInView";
 // import WhileDrag from "./components/Gesture/WhileDrag";
 // import WhileTap from "./components/Gesture/WhileTap";
 // import WhileHover from "./components/Gesture/WhileHover";
@@ -17,8 +18,10 @@ function App() {
       {/* <WhileDrag /> */}
 
       {/* Scroll */}
+      {/* <WhileInView /> */}
 
-      <WhileInView />
+      {/* Layout */}
+      <Layout />
     </div>
   );
 }
