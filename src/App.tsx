@@ -1,5 +1,6 @@
 import "./App.css";
-import Layout from "./components/Layout/Layout";
+import DevMeetup from "./components/DevMeetup";
+// import Layout from "./components/Layout/Layout";
 // import WhileInView from "./components/Scroll/WhileInView";
 // import WhileDrag from "./components/Gesture/WhileDrag";
 // import WhileTap from "./components/Gesture/WhileTap";
@@ -8,7 +9,7 @@ import Layout from "./components/Layout/Layout";
 
 function App() {
   return (
-    <div className="container mx-auto flex justify-center items-center h-screen">
+    <div className="container mx-auto h-screen">
       {/* <Transition /> */}
 
       {/* Gestures */}
@@ -21,7 +22,10 @@ function App() {
       {/* <WhileInView /> */}
 
       {/* Layout */}
-      <Layout />
+      {/* <Layout /> */}
+
+      {/* Dev Meetup */}
+      <DevMeetup />
     </div>
   );
 }

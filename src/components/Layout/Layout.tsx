@@ -141,7 +141,7 @@ const Layout = () => {
           height: isExpanded ? 200 : 100,
         }}
       >
-        <motion.div layout transition={{ duration: 1 }}>
+        <div>
           {isExpanded ? (
             <div className="ms-[10px]">
               <label
@@ -171,7 +171,7 @@ const Layout = () => {
               Write message
             </button>
           )}
-        </motion.div>
+        </div>
       </motion.div>
 
       {/* Reordering */}
@@ -212,7 +212,7 @@ const Layout = () => {
               <motion.div
                 key={msg}
                 layout
-                exit={{ opacity: 0, scale: 0 }}
+                exit={{ opacity: 0, y: 100 }}
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
